@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block title %} Blockchain {% endblock %} {% block
+main %}
+
+<body>
+  <div class="container-fluid">
+    <!-- <h2>Blockchain Status</h2> -->
+    <h4 class="mb-5">Welcome {{ username }}</h4>
+    <h6>Student Attendance</h6>
+    <h6 class="mb-5">
+      Note that this is all of the blockchain not just your blocks.
+    </h6>
+    <div class="table-index">
+      {% for res in checking_results %}
+      <table class="table table-dark table-striped table-bordered table-sm">
+        <thead>
+          <tr>
+            <th>Block Number</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Block {{ res['block'] }}</td>
+            <td>{{ res['results'] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      {% endfor %}
+    </div>
+    <button onClick="window.location.reload();" class="btn btn-secondary">
+      Check
+    </button>
+  </div>
+</body>
+
+{% endblock %}
