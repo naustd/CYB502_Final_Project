@@ -1,0 +1,145 @@
+<!-- <!DOCTYPE html>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/materialize.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/main.css') }}"
+/>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='js/materialize.js') }}"
+></script>
+
+<-- <title>Blockchain Project</title> -->
+{% extends "layout.html" %} {% block title %} Blockchain {% endblock %} {% block
+main %}
+
+<!-- <body class="blue-grey lighten-4">
+    <h3>STUDENT ATTENDANCE</h3>
+    <div class="container">
+    
+    <div class="row">
+        <form action="/" method="post" class="col s12">
+            <div class="row valign-wrapper">
+                <div class="input-field col s12">                   
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="name" name="name" value="">
+                    <label for="name">Enter Instructor's name</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Next
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+            <div class="col s12">
+                <a class="btn" href="/view.html">View previous records</a>
+                <br />
+                <br />
+                <a class="btn" href="/result.html">Check integrity of blockchain</a>
+            </div>
+    </div>
+    </div>
+</body> -->
+<!-- <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle"
+/> -->
+<!-- <link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/materialize.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/main.css') }}"
+/>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='js/materialize.js') }}"
+></script> -->
+
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<body>
+  <div class="container-fluid">
+    <!-- <h2>Blockchain Status</h2> -->
+    <h4 class="mb-5">Welcome {{ username }}</h4>
+    <!-- <h6>Student Attendance</h6> -->
+    <div class="row">
+      <form action="/" method="post" class="col s12">
+        <div class="row valign-wrapper">
+          <div class="input-field col s12">
+            <i
+              class="material-icons prefix"
+              style="background-color: whitesmoke; height: 30px"
+              >account_circle</i
+            >
+            <!-- <span
+              class="material-symbols-outlined"
+              style="background-color: whitesmoke"
+            >
+              account_circle
+            </span> -->
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value=""
+              placeholder="Enter Instructor's Name"
+              style="width: 250px"
+            />
+            <label for="name">Enter Instructor's name</label>
+            <button
+              class="btn waves-effect waves-light"
+              style="background-color: whitesmoke; font-size: 22px"
+              type="submit"
+              name="action"
+            >
+              Next
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <!-- <button
+            class="btn waves-effect waves-light"
+            style="background-color: whitesmoke"
+            type="submit"
+            name="action"
+          >
+            Next
+            <i class="material-icons right" style="padding-right: 80px">send</i>
+          </button> -->
+        </div>
+      </form>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+      <div class="col s12">
+        <a class="btn" href="/view.html" style="background-color: whitesmoke"
+          >View previous records</a
+        >
+        <br />
+        <!-- <br />
+        <a class="btn" href="/result.html">Check integrity of blockchain</a> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock %}
